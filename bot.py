@@ -1,5 +1,8 @@
 # import discord.py
 import discord
+from discord.ext.commands import Bot
+from discord.ext import commands
+import asyncio
 import os
 
 # set a discord client
