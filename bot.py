@@ -5,9 +5,6 @@ import os
 # set a discord client
 client = discord.Client()
 
-# set bot token
-token = "NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc"
-
 @client.event
 async def on_ready():
     print("I'm in!")
@@ -18,5 +15,5 @@ async def on_message(message):
     if message.author != client.user:
         await  client.send_message(message.channel, message.content[::-1])
 
-token = os.environ.get(token)
+token = os.environ.get( "NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc")
 client.run(token)
