@@ -1,0 +1,16 @@
+# import discord.py
+import discord
+import os
+
+# set a discord client
+client = discord.Client()
+
+# set bot token
+token = "NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc"
+
+@client.event
+async def on_ready():
+    print("I'm in!")
+    print(client.user)
+
+@client.event
