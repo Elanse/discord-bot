@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author != client.user:
-        await  client.send_message(message.channel, message.content[::-1])
+        await client.send_message(message.channel, message.content[::-1])
 
 token = os.environ.get( "NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc")
 client.run(token)
