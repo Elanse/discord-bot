@@ -1,5 +1,5 @@
 # import discord.py
-import discord
+import discord.io
 from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
