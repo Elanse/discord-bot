@@ -10,7 +10,7 @@ client = commands.Bot(command_prefix = "?")
 
 @client.event
 async def on_ready():
-    await client.change_presence(game = Game(name = "I'm alive!")))
+    await client.change_presence(game = Game(name = "I'm alive!"))
     print("Ready!")
 
 @client.event
@@ -19,3 +19,5 @@ async def on_message(message):
         await client.send_message(message.channel, "DROPTOP")
     if message.content.upper().startswith("HELLO"):
         await client.send_message(message.channel, "Hi there!")
+
+client.run("NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc")
