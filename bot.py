@@ -12,14 +12,14 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game = Game(name = "   "))
+    await client.change_presence(game = Game(name = "I'm Alive!"))
     print("Ready, Freddy!")
 
 @client.event
 async def on_message(message):
-    if message.content.upper() == "RAINDROP":
-        await client.send_message(message.channel, "DROPTOP")
-    if message.content.upper().startswith("HELLO"):
-        await client.send_message(message.channel, "Hi there!")
+    if message.content == "$ping"
+        await client.send_message(message.channel, "pong")
+    if ("hello") in message.content:
+        await client.delete_message(message)
 
 client.run("NTAxNTIxODYwODI0MDA2NjY4.DqapaA.su1bMmowu0Q6Atiav19OmmSgflc")
